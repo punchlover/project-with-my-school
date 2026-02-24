@@ -38,7 +38,7 @@ header {
     color: white;
     font-family:"Montserrat", sans-serif;
     text-align: center;
-    background-color: rgb(80, 79, 79);
+    background-color: rgba(80, 79, 79, 0.301);
     padding: 0.2em;
     font-weight: 100;
     text-shadow: 0 0 5px white;
@@ -77,14 +77,39 @@ footer {
     margin: 0;
     width: 100vw;
     background-color: #151922;
+    gap: 1em;
 }
 
-footer p {
+.footer-1-p {
+    text-align: center;
     text-shadow: 0 0 5px white;
-    font-weight: 400;
+    font-weight: 300;
     color: white;
     font-family:"Montserrat", sans-serif;
     font-size: 1.3em;
+}
+
+.footer-2 {
+    width: 20%;
+    background-color: rgba(80, 79, 79, 0.301);
+    border-radius: 50px;
+}
+
+.footer-2-p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 5px white;
+    font-weight: 300;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-size: 0.8em;
+}
+
+.name-1 , .name-2 {
+    color: #42b6c6;
 }
 
 .name-project {
@@ -98,6 +123,8 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background: radial-gradient(
+    circle,#2d3242,#12141b
+    );
     gap: 3em;
 }
