@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
+html { 
+    scroll-behavior: smooth; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,20 +12,16 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    overflow: hidden;
 }
 
 header {
     width: 100vw;
     background-color: #151922;
 }
-
-
 
 .general-header {
     display: flex;
@@ -32,7 +32,6 @@ header {
     padding: 0.5em;
     align-items: center;
 } 
-
 
 .general-header h1 {
     color: white;
@@ -56,12 +55,16 @@ a {
     transition-duration: 0.5s;
 }
 
+.buttons-header {
+    display: flex;
+    gap: 1.5em;
+}
+
 a:hover {
     text-shadow: 0 0 5px white;
     transition-duration: 0.3s;
     color: white;
 }
-
 
 .logo-header {
     display: flex;
@@ -93,6 +96,7 @@ footer {
     width: 20%;
     background-color: rgba(80, 79, 79, 0.301);
     border-radius: 50px;
+    padding: 0.5em 0;
 }
 
 .footer-2-p {
@@ -117,7 +121,7 @@ footer {
 }
 
 main {
-    height: 100%;
+    flex: 1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -127,4 +131,132 @@ main {
     circle,#2d3242,#12141b
     );
     gap: 3em;
+    padding: 2em 0;
+}
+
+.start {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.start h2 {
+    color: rgb(12, 211, 28);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    margin-left: 1em;
+    text-align: left;
+    font-size: 2.3em;
+}
+
+.start p {
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    margin-left: 1em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.start img {
+    width: 17%;
+    margin-right: 8em;
+    user-select: none;
+}
+
+.steal-metods {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 0 2em;
+    padding-bottom: 5em;
+}
+
+.steal-metods h2 {
+    color: rgb(255, 0, 0);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.steal-metods p {
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    font-size: 1em;
+    text-align: left;
+}
+
+.fishing-2, .malicious-software-2, .social-engineering-2, .hacking-networks-2 {
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    padding: 1em;
+    border-radius: 15px;
+    margin-left: 1em;
+}
+
+.steal-metods-h1 {
+    display: flex;
+    color: rgb(238, 255, 0);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3em;
+}
+
+.protection-rules-h1 {
+    display: flex;
+    color: rgb(12, 211, 28);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;  
+}
+
+.protection-rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    padding: 1em;
+    border-radius: 15px;
+    margin-left: 1em;
+}
+
+.protection-rules p {
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 100;
+    text-shadow: 0 0 5px white;
+    border-radius: 50px;
+    margin-bottom:0.5em ;
+    font-size: 1.3em;
+    background-color: rgba(80, 79, 79, 0.301);
 }
