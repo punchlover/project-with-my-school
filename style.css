@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,6 +20,8 @@ body {
 }
 
 header {
+    top: 0;
+    position: sticky;
     width: 100vw;
     background-color: #151922;
 }
@@ -38,7 +41,7 @@ header {
     font-family:"Montserrat", sans-serif;
     text-align: center;
     background-color: rgba(80, 79, 79, 0.301);
-    padding: 0.2em;
+    padding: 0.4em;
     font-weight: 100;
     text-shadow: 0 0 5px white;
     border-radius: 50px;
@@ -259,4 +262,8 @@ main {
     margin-bottom:0.5em ;
     font-size: 1.3em;
     background-color: rgba(80, 79, 79, 0.301);
+}
+
+#start1,#stealmetods,#rules {
+    scroll-margin-top: 200px;
 }
