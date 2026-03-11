@@ -23,7 +23,7 @@ header {
     top: 0;
     position: sticky;
     width: 100vw;
-    background-color: #151922;
+    background-color: #1c222e;
 }
 
 .general-header {
@@ -82,7 +82,7 @@ footer {
     padding-top: 1em;
     margin: 0;
     width: 100vw;
-    background-color: #151922;
+    background-color: #1c222e;
     gap: 1em;
 }
 
@@ -131,7 +131,7 @@ main {
     flex-direction: column;
     align-items: center;
     background: radial-gradient(
-    circle,#2d3242,#12141b
+    circle,#383e52,#181d27
     );
     gap: 3em;
     padding: 2em 0;
@@ -207,8 +207,8 @@ main {
 }
 
 .fishing-2, .malicious-software-2, .social-engineering-2, .hacking-networks-2 {
-    border: 1px solid white;
-    box-shadow: 0 0 5px white;
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(240, 110, 110);
     padding: 1em;
     border-radius: 15px;
     margin-left: 1em;
@@ -246,8 +246,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    border: 1px solid white;
-    box-shadow: 0 0 5px white;
+    border: 1px solid rgb(12, 211, 28);
+    box-shadow: 0 0 5px rgb(118, 233, 128);
     padding: 1em;
     border-radius: 15px;
     margin-left: 1em;
